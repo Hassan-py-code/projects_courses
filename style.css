@@ -330,3 +330,92 @@ main{
   object-fit: cover; 
   display: block;
 }
+
+
+
+
+.courses{
+  margin-top: 3rem;
+  text-align: center;
+  color: #121212;
+}
+
+
+
+.courses {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.courses h1 {
+  color: #121212;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.courses p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.see_courses {
+    display: flex;      
+    flex-wrap: wrap;
+    flex-wrap: wrap;   
+    justify-content: space-around;
+}
+
+.see_courses > div {
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    overflow: hidden;    
+    width: 300px;        
+    transition: transform 0.3s;
+    border-left: 6px solid #F7F217;
+}
+
+.see_courses > div:hover {
+    transform: translateY(-5px); 
+    cursor: pointer;
+}
+
+.see_courses img {
+    width: 100%;         
+    height: 200px;       
+    object-fit: cover;   
+}
+
+.see_courses h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.see_courses p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .see_courses > div {
+    width: 90%;  
+  }
+}
+
+.all_corses {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.all_corses button{
+     padding: 0.5rem 30px;
+    background-color: #F7F217;
+    color: #121212;
+    font-weight: 600;
+    border-radius: 40px;
+    border: 1px solid #ffff;
+    box-shadow: 5px 5px 0 #121212;
+    cursor: pointer;
+    border: 2px solid black;
+}
