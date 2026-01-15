@@ -5,7 +5,6 @@ html{
 }
 
 body{
-    /* background-color: #121212; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -420,6 +419,211 @@ main{
     border: 2px solid black;
 }
 
-.best_courses img{
-  width: 200px;
+.best_courses{
+    margin-top: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #121212;
 }
+
+.best_courses p{
+     color: #ffffff9a;
+}
+
+.best_courses .join{
+    color: #F7F217;
+}
+
+
+
+.best_courses button{
+    padding: 0.5rem 30px;
+    background-color: #F7F217;
+    color: #121212;
+    font-weight: 600;
+    border-radius: 40px;
+    border: 1px solid #ffff;
+    box-shadow: 10px 10px 0 #ffff;
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+
+footer{
+    background-color: #121212;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 4rem;
+}
+
+footer .cor_footer{
+    color: #F7F217;
+    font-size: 1.7rem;
+}
+
+footer p{
+     font-size: 1.5rem;
+     border-bottom: 1px solid #F7F217;
+     width: fit-content;
+}
+
+footer div a{
+    display: block;
+    text-decoration: none;
+  color: #ffffff9a;
+}
+
+footer .social_media a{
+    display: inline;
+    margin-right: 14px;
+}
+
+footer .social_media a i{
+    font-size: 1.5rem;
+    transition: 0.3s ease-in;
+}
+
+footer .social_media a i:hover{
+    color: #F7F217;
+}
+
+.copy_right{
+    background-color: #F7F217;
+    padding: 3px;
+    text-align: center;
+}
+
+.copy_right p{
+  color: #111;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  header h2 {
+    margin-left: 0;
+  }
+
+  header nav a {
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+
+  header button {
+    margin-right: 0;
+  }
+
+  /* HOME TITLE */
+  .home_tasks div h1 {
+    font-size: 40px;
+  }
+
+  .home_tasks div h2 {
+    font-size: 22px;
+  }
+
+  /* IMAGE + CONTENT */
+  .image_tasks {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .image img {
+    position: static;
+    width: 250px;
+  }
+
+  svg {
+    width: 300px;
+    height: auto;
+  }
+
+  .content {
+    margin-top: 0;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  /* STUDENTS SECTION */
+  .students {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .students-section {
+    flex-direction: column;
+  }
+
+  .mySwiper {
+    width: 100%;
+  }
+
+  /* COURSES */
+  .see_courses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .see_courses > div {
+    width: 90%;
+  }
+
+  /* BEST COURSES */
+  .best_courses {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+}
+@media (max-width: 1024px) {
+
+  .image_tasks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .students {
+    flex-direction: column;
+  }
+
+  .Courser_stu {
+    flex-wrap: wrap;
+    border-radius: 40px;
+    gap: 20px;
+  }
+
+  .mySwiper {
+    width: 70%;
+  }
+}
+
